@@ -1,11 +1,7 @@
 export class Person {
-  id: number
-  name: string
-  phone?: string
-
-  constructor (id: number, name: string, phone?: string) {
-    this.id = id
-    this.name = name
-    this.phone = phone
-  }
+  constructor (
+    protected id: number,
+    protected name: string,
+    protected phone?: string
+  ) {}
 }
